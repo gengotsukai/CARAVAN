@@ -1,6 +1,9 @@
 <header>
   <h1 class="headline">
-    <%= link_to "CARAVAN", blogs_path %>
+    <p class="single-text">
+        <%= @blog.body %>
+      </p>
+    <%= link_to "編集", edit_blog_path(@blog) %>
   </h1>
   <div class="social">
     <i class="fa fa-facebook-square"></i>
